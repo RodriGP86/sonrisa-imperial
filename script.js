@@ -1,7 +1,7 @@
 (function () {
   // --- Datos de la clínica: reemplaza con los reales ---
-  var WHATSAPP_NUMBER = "525500000000"; // lada país + número, sin + ni espacios
-  var EMAIL = "citas@sonrisaimperial.com";
+  var WHATSAPP_NUMBER = "56976135126"; // lada país + número, sin + ni espacios
+  var EMAIL = "rgp1986@gmail.com";
 
   var form = document.getElementById("booking");
   var panel = document.getElementById("confirm");
