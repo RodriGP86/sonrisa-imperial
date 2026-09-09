@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sonrisa Imperial — Clínica dental</title>
+  <meta name="description" content="Clínica dental Sonrisa Imperial. Agenda tu cita en menos de 24 horas.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap wrap--wide bar">
+    <a class="mark" href="#top">Sonrisa Imperial <span>Clínica dental</span></a>
+    <a class="btn btn--primary" href="#agendar">Agendar cita</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <p class="eyebrow">Odontología de precisión</p>
+    <svg class="arc" viewBox="0 0 320 64" aria-hidden="true">
+      <path d="M10 14 C 96 84, 224 84, 310 14" fill="none" stroke="var(--brass)" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>
+    <h1>Una sonrisa cuidada con precisión.</h1>
+    <p class="lead">Consulta, diagnóstico y tratamiento en un solo lugar. Agenda tu cita y te confirmamos en menos de 24 horas.</p>
+    <div class="hero-cta">
+      <a class="btn btn--primary" href="#agendar">Agendar cita</a>
+      <a class="btn btn--ghost" href="#visita">Horario y ubicación</a>
+    </div>
+  </section>
+
+  <section class="section wrap" id="agendar">
+    <h2>Agenda tu cita</h2>
+    <p class="note" style="margin-bottom:28px;max-width:52ch;">Completa el formulario y elige cómo prefieres enviarlo. Recibirás la confirmación por WhatsApp o llamada.</p>
+
+    <form id="booking" novalidate>
+      <div class="row">
+        <div class="field">
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="telefono">Teléfono</label>
+          <input id="telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="correo">Correo (opcional)</label>
+          <input id="correo" name="correo" type="email" autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="motivo">Motivo de la consulta</label>
+          <select id="motivo" name="motivo" required>
+            <option value="Limpieza y revisión">Limpieza y revisión</option>
+            <option value="Blanqueamiento">Blanqueamiento</option>
+            <option value="Ortodoncia">Ortodoncia</option>
+            <option value="Implantes">Implantes</option>
+            <option value="Dolor o urgencia">Dolor o urgencia</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label for="fecha">Fecha preferida</label>
+          <input id="fecha" name="fecha" type="date">
+        </div>
+        <div class="field">
+          <label for="horario">Horario preferido</label>
+          <select id="horario" name="horario" required>
+            <option value="Mañana (9:00–13:00)">Mañana (9:00–13:00)</option>
+            <option value="Tarde (13:00–19:00)">Tarde (13:00–19:00)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="mensaje">Mensaje (opcional)</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos brevemente qué necesitas."></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn--primary">Preparar solicitud</button>
+        <p class="note">Sin pagos ni registro. Solo tus datos de contacto.</p>
+      </div>
+    </form>
+
+    <div id="confirm" hidden>
+      <h3>Tu solicitud está lista</h3>
+      <p class="note">Revísala y envíala por el canal que prefieras.</p>
+      <pre id="confirm-summary"></pre>
+      <div class="form-actions">
+        <a id="wa-link" class="btn btn--primary" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+        <a id="mail-link" class="btn btn--ghost" href="#">Enviar por correo</a>
+        <button id="copy-btn" type="button" class="btn btn--ghost">Copiar datos</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap wrap--wide" id="visita">
+    <h2>Horario y ubicación</h2>
+    <div class="grid grid--2" style="margin-top:24px;">
+      <dl class="data">
+        <dt>Dirección</dt>
+        <dd style="margin:0;">Av. Reforma 100, piso 4<br>Col. Centro, Ciudad de México</dd>
+        <dt>Contacto</dt>
+        <dd style="margin:0;">WhatsApp +52 55 0000 0000<br>citas@sonrisaimperial.com</dd>
+      </dl>
+      <dl class="data">
+        <dt>Lunes a viernes</dt>
+        <dd style="margin:0;">9:00 – 19:00</dd>
+        <dt>Sábado</dt>
+        <dd style="margin:0;">9:00 – 14:00</dd>
+        <dt>Domingo</dt>
+        <dd style="margin:0;">Cerrado</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section wrap wrap--wide expect">
+    <h2>Qué esperar</h2>
+    <div class="grid grid--3" style="margin-top:24px;">
+      <div>
+        <h3>Puntualidad</h3>
+        <p>Citas por horario reservado. Sin salas de espera llenas.</p>
+      </div>
+      <div>
+        <h3>Presupuesto claro</h3>
+        <p>Conoces el costo y el plan de tratamiento antes de empezar.</p>
+      </div>
+      <div>
+        <h3>Trato cercano</h3>
+        <p>El mismo equipo te acompaña en cada visita.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap wrap--wide foot">
+    <span>© 2026 Sonrisa Imperial</span>
+    <span>Av. Reforma 100 · CDMX · +52 55 0000 0000</span>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
